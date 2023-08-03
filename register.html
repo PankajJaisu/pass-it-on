@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+            <div class="form_div">
+                <h1>Sign Up </h1>
+                First Name <input type="text" name="first_name" placeholder="Enter First Name" required><br>
+                Last Name <input type="text" name="last_name" placeholder="Enter Last Name" required><br>
+                
+                Email <input type="email" name="email" placeholder="Enter Email" required><br>
+                Create Password <input type="password" name="create_password" placeholder="Enter Create Password" required><br>
+                Confirm Password <input type="password" name="confirm_password" placeholder="Enter Cofirm Password" required><br>
+
+                <button type="button" onclick=register()>Register</button><br>
+            </div>
+            
+        </form>
+        <form action="/login.html">
+            <button type="submit" id="login_btn" style="visibility: hidden;">Login</button>
+        </form>
+        <h3 id="show_register_msg"></h3>
+           </div>
+    <script>
+        function register(){
+            
+            document.getElementById("show_register_msg").innerHTML="Registered Successfully";
+            document.getElementsByClassName("form_div")[0].style.display="none";
+            document.getElementById("login_btn").style.visibility="visible";
+        }
+    </script>
+    
+</body>
+</html>
