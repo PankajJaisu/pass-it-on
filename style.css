@@ -1,66 +1,45 @@
-body {
-    background-color: #54FFED;
-    margin: 0;
-}
-
 .navbar {
+    background-color: #006389;
+}
+.card-container {
+    margin: 40px;
     display: flex;
-    justify-content: space-between;
-    background-color: #EEE;
-    padding: 10px;
-    color:#000;
-    
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row;
+}
+  
+  .card {
+    margin-right: 20px;
+  }
+  
+
+  .card:last-child {
+    margin-right: 0;
+  }
+
+
+ 
+
+
+.navbar-brand {
+    color: blueviolet;
 }
 
-.navbar-item {
-    margin: 0;
+  body{
+    background-color: black;
+  }
+  .navbar-light .navbar-brand {
+    color: #7e7e7e41;
 }
-
-.navbar-item a {
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-    background-color: #EEE;
-    border-radius: 5px;
-}
-
-
-.signin {
-    background-color: #FF69B4; 
-    margin-left: auto; 
-}
-
-.landing-page {
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFF; 
-    padding: 40px; 
+    justify-content: center;
 }
-
-.slogan {
-    flex: 1;
-}
-
-.slogan h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.slogan h2 {
-    font-size: 18px;
-    font-weight: normal;
-    color: #555;
-}
-
-.image {
-    flex: 1;
-    text-align: right;
-    
-}
-
-.image img {
-    max-width: 100%;
-    height: auto;
-}
+.footer-link {
+    margin: 0 10px; 
+  }
 
